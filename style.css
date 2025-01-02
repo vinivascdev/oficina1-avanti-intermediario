@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+#link-calculadora {
+    font-weight: bold;
+    color: #005eff;
+}
+
+header nav {
+    background-color: #00A195;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    gap: 50px;
+}
+
+header nav img {
+    height: 70px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-texto {
+    width: 50%;
+}
+
+.main-texto img {
+    width: 100%;
+}
+
+footer {
+    background-color: #00A195;
+    display: flex;
+    gap: 140px;
+    padding: 25px 100px 100px 100px;
+}
+
+footer p {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.footer1 {
+    width: 193px;
+}
+
+.footer1 img {
+    width: 100%;
+}
+
+.footer1 p {
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.endereço-footer {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.footer2 a,
+.footer3 a {
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.bordas {
+    width: 100%;
+    height: 10px;
+    background-color: #00665f;
+}
+
+#borda-footer{
+    margin-top: 50px;
+}
