@@ -5,6 +5,10 @@ body {
     font-family: Arial, sans-serif;
 }
 
+img {
+    border-radius: 20px;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -50,6 +54,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 .main-texto {
@@ -86,7 +91,7 @@ footer p {
     line-height: 24px;
 }
 
-.endereço-footer {
+.bold-footer {
     font-weight: bold;
     font-size: 15px;
 }
@@ -104,6 +109,6 @@ footer p {
     background-color: #00665f;
 }
 
-#borda-footer{
+#borda-footer {
     margin-top: 50px;
 }

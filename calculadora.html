@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>+ Saúde Fortaleza | Calculadora de IMC</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/calculadora.css">
+    <link rel="shortcut icon" type="imagex/png" href="assets/flag-fortaleza.png">
 </head>
+
 <body>
     <header>
         <nav>
-            <img src="assets/prefeitura-fortaleza-logo.png" alt="Logo da Prefeitura de Fortaleza">
+            <a href="index.html"><img src="assets/prefeitura-fortaleza-logo.png"
+                    alt="Logo da Prefeitura de Fortaleza"></a>
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="calculadora.html">Calculadora de IMC</a></li>
@@ -18,8 +23,95 @@
         <div style="width: 100%; height: 10px; background-color: #00665f;"></div>
     </header>
 
-    
+    <main>
 
-    <script src="script.js"></script>
+        <div class="texto-calculadora">
+            <h1>Índice de Massa Corporal</h1>
+            <p>IMC é a sigla para Índice de Massa Corporal, parâmetro adotado pela Organização Mundial de Saúde para
+                calcular o peso ideal de cada pessoa. <br><br>
+                O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao
+                quadrado.
+
+                <br>
+            <div class="tabela-container">
+                <img src="assets/tabela-imc.png" alt="Tabela IMC">
+            </div>
+            <br>
+
+            Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9. <br><br>
+            Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da
+            tabela.
+            </p>
+        </div>
+
+        <div class="calculadora-corpo">
+            <h2>Calculadora de IMC</h2>
+            <p>Informe seu peso e altura para calcular o Índice de Massa Corporal (IMC).</p>
+            <br>
+            <form>
+
+                <label for="peso">Qual seu peso?</label><br>
+                <div class="input-container">
+                    <input type="number" name="peso" id="peso-input" required>
+                    <div class="valor-direito">KG</div>
+                </div><br><br>
+
+                <label for="altura">Qual sua altura?</label><br>
+                <div class="input-container">
+                    <input type="number" name="altura" id="altura-input" required>
+                    <div class="valor-direito">CM</div>
+                </div><br><br>
+
+                <button type="submit" onclick="calcularIMC(event)">Calcular IMC</button>
+
+            </form>
+
+            <div class="resultado-container">
+                <div id="resultado-imc"></div><br>
+                <div id="imagem-imc"></div><br>
+                <div id="explicacao-imc"></div>
+            </div>
+        </div>
+    </main>
+
+    <div class="bordas" id="borda-footer"></div>
+    <footer>
+        <div class="footer1">
+            <img src="assets/prefeitura-fortaleza-logo-branca.png" alt="Logo branca da Prefeitura de Fortaleza">
+            <p>
+            <p><span class="endereço-footer">ENDEREÇO E CONTATOS</span></p>
+            <p>Rua São José, 01 - Centro <br>
+                Fortaleza-CE - CEP: 60.060-170</p>
+            <p>Fala Fortaleza: 0800.285.0880<br>
+                Central 156</p>
+            </p>
+        </div>
+
+        <div class="footer2">
+
+            <p><span class="endereço-footer">LINKS IMPORTANTES</span></p>
+
+            <a href="https://www.fortaleza.ce.gov.br/">Portal</a><br>
+            <a href="https://www.fortaleza.ce.gov.br/a-cidade">A Cidade</a><br>
+            <a href="https://www.fortaleza.ce.gov.br/canais">Canais</a><br>
+            <a href="https://www.fortaleza.ce.gov.br/institucional">Institucional</a><br>
+            <a href="https://www.fortaleza.ce.gov.br/institucional/area-de-imprensa">Área da Imprensa</a><br>
+            <a href="https://www.fortaleza.ce.gov.br/institucional/identidade-visual">Identidade Visual</a><br>
+            <a href="https://www.fortaleza.ce.gov.br/noticias">Notícias</a><br>
+
+        </div>
+
+        <div class="footer3">
+
+            <p><span class="endereço-footer">LINKS ÚTEIS</span></p>
+
+            <a href="https://www.fortaleza.ce.gov.br/politica-de-privacidade">Política de Privacidade</a>
+
+        </div>
+
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
