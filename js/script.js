@@ -46,16 +46,16 @@ function mostraIMC() {
     if (imc <= 18.5) {
         imagemIMC.innerHTML = '<img src="assets/magro.webp" alt="Abaixo do Peso" />';
         explicacao.innerHTML = "Procure um médico. Algumas pessoas têm um baixo peso por características do seu organismo e tudo bem. Outras podem estar enfrentando problemas, como a desnutrição. É preciso saber qual é o caso.";
-    } else if (imc >= 18.6 && imc <= 24.9) {
+    } else if (imc >= 18.51 && imc <= 24.99) {
         imagemIMC.innerHTML = '<img src="assets/normal.webp" alt="Peso Normal" />';
         explicacao.innerHTML = "Que bom que você está com o peso normal! E o melhor jeito de continuar assim é mantendo um estilo de vida ativo e uma alimentação equilibrada.";
-    } else if (imc >= 25 && imc <= 29.9) {
+    } else if (imc >= 25 && imc <= 29.99) {
         imagemIMC.innerHTML = '<img src="assets/sobrepeso.webp" alt="Sobrepeso" />';
         explicacao.innerHTML = "Sobrepeso é, na verdade, uma pré-obesidade e muitas pessoas nessa faixa já apresentam doenças associadas, como diabetes e hipertensão. Importante rever hábitos e buscar ajuda antes de, por uma série de fatores, entrar na faixa da obesidade pra valer.";
-    } else if (imc >= 30 && imc <= 34.9) {
+    } else if (imc >= 30 && imc <= 34.99) {
         imagemIMC.innerHTML = '<img src="assets/obeso1.webp" alt="Obesidade Grau 1" />';
         explicacao.innerHTML = "Sinal de alerta! Chegou na hora de se cuidar, mesmo que seus exames sejam normais. Vamos dar início a mudanças hoje! Cuide de sua alimentação. Você precisa iniciar um acompanhamento com nutricionista e/ou endocrinologista.";
-    } else if (imc >= 35 && imc <= 39.9) {
+    } else if (imc >= 35 && imc <= 39.99) {
         imagemIMC.innerHTML = '<img src="assets/obeso2.webp" alt="Obesidade Grau 2" />';
         explicacao.innerHTML = "Mesmo que seus exames aparentem estar normais, é hora de se cuidar, iniciando mudanças no estilo de vida com o acompanhamento próximo de profissionais de saúde.";
     } else {
